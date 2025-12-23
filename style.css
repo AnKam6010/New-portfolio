@@ -258,18 +258,6 @@ body.dark-mode #aboutme {
     border-bottom: 1px solid #333;
 }
 
-.upbox-container {
-    width: 70%;
-    margin-top: -150px; 
-    position: absolute; 
-    left: 50%; 
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 10; 
-}
-
 .theme-btn {
     background: none;
     border: none;
@@ -282,14 +270,6 @@ body.dark-mode #aboutme {
 }
 .theme-btn:hover {
     transform: scale(1.2);
-}
-
-.upbox {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 20px; 
-    flex-wrap: wrap; 
 }
 
 .filter-buttons {
@@ -355,5 +335,6 @@ body.dark-mode #aboutme {
         margin-bottom: 20px;
     }
 }
+
 
 
