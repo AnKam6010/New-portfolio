@@ -293,21 +293,21 @@ body.dark-mode #aboutme {
     color: white;
     border-radius: 15px;
 }
+
 .upbox-container {
-    width: 100%;
+    width: 70%; 
     margin-top: -150px; 
-    position: absolute;
+    position: absolute; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 10;
 }
 
 .upbox {
     display: flex;
-    justify-content: center;
-    width: 80%; 
-    gap: 30px; 
+    justify-content: space-between; 
+    width: 100%;
+    gap: 20px; 
 }
 
 .card {
@@ -318,23 +318,32 @@ body.dark-mode #aboutme {
     width: 30%; 
     text-align: center;
     transition: 0.5s;
+    color: white; 
+}
+
+.filter-buttons {
+    margin-bottom: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    z-index: 20;
 }
 
 @media screen and (max-width: 768px) {
     .upbox-container {
         position: static;
+        width: 90%;
         margin-top: 0;
     }
     .upbox {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
+        flex-direction: column; 
     }
     .card {
-        width: 90%;
+        width: 100%;
         margin-bottom: 20px;
     }
 }
+
 
 
 
