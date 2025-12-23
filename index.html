@@ -88,8 +88,41 @@ Whether you're a seasoned expert or a curious newcomer, this site is your gatewa
         <div class="par"> to be honest I dont have a blog but I will write about duck</div>
         <a href="https://ru.wikipedia.org/wiki/%D0%A3%D1%82%D0%BA%D0%B8"></a>
     </section>
+    <script>
+    const themeBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    themeBtn.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        if (body.classList.contains('dark-mode')) {
+            themeBtn.textContent = '☀️';
+        } else {
+            themeBtn.textContent = '🌙';
+        }
+    });
+
+    function filterProjects(category) {
+        const cards = document.querySelectorAll('.card');
+        const buttons = document.querySelectorAll('.filter-btn');
+        buttons.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.textContent.toLowerCase().includes(category) || 
+               (category === 'all' && btn.textContent === 'All')) {
+                btn.classList.add('active');
+            }
+        });
+        cards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+</script>
 </body> 
 </html>
+
 
 
 
