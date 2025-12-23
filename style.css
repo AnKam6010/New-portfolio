@@ -258,23 +258,40 @@ body.dark-mode #aboutme {
     border-bottom: 1px solid #333;
 }
 
-
 .upbox-container {
     width: 70%;
-    margin-top: -150px;
-    position: absolute;
+    margin-top: -150px; 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 10; 
 }
+
+.theme-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+    z-index: 1001; 
+    padding: 5px;
+    transition: 0.3s;
+}
+.theme-btn:hover {
+    transform: scale(1.2);
+}
+
 .upbox {
-    position: static;
-    margin-top: 20px;
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
+
 .filter-buttons {
     margin-bottom: 20px;
     background: white;
@@ -306,3 +323,4 @@ body.dark-mode #aboutme {
         flex-direction: column;
     }
 }
+
