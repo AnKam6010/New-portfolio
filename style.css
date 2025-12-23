@@ -158,3 +158,63 @@ nav{
     width: 200px; /* Adjust width as needed */
     text-align: left;
 }
+
+html {
+    scroll-behavior: smooth; 
+}
+
+@media screen and (max-width: 768px) {
+    .hero, .korobka, nav {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .korobka {
+        margin: 0;
+        text-align: center;
+    }
+    h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin: 20px 0;
+    }
+    nav {
+        padding: 20px 0;
+    }
+    .link {
+        margin: 10px 0;
+        font-size: 1.5rem;
+    }
+    .right {
+        position: static;
+        margin-top: 15px;
+        border: 1px solid black;
+    }
+    .upbox {
+        position: static;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 20px;
+        background-color: #282828;
+    }
+    .card {
+        width: 90%;
+        margin: 15px auto;
+    }
+    .par {
+        font-size: 16px;
+        text-align: justify;
+    }
+    .photo, img {
+        width: 200px;
+        height: auto;
+    }
+    #aboutme, .skills, .blog {
+        height: auto;
+        padding: 50px 0;
+    }
+}
